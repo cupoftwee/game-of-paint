@@ -25,7 +25,7 @@ const scaleToRange = (val, fromRange = [0, 500], toRange = [0, 1]) => {
 
 const getColor = (cell, iterations) => {
   const { isAlive, deaths, lastHue } = cell;
-  const colorScale = chroma;
+  const colorScale = chroma
     .scale('Spectral')
     .gamma(6)
     .mode('lrgb');
